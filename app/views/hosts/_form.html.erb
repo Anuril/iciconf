@@ -1,0 +1,57 @@
+<%= form_for(@host) do |f| %>
+  <% if @host.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@host.errors.count, "error") %> prohibited this host from being saved:</h2>
+
+      <ul>
+      <% @host.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :hostname %><br>
+    <%= f.text_field :hostname %>
+  </div>
+  <div class="field">
+    <%= f.label :alias %><br>
+    <%= f.text_field :alias %>
+  </div>
+  <div class="field">
+    <%= f.label :display_name %><br>
+    <%= f.text_field :display_name %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br>
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :parents %><br>
+    <%= f.text_field :parents %>
+  </div>
+  <div class="field">
+    <%= f.label :hostgroups %><br>
+    <%= f.text_field :hostgroups %>
+  </div>
+  <div class="field">
+    <%= f.label :check_command %><br>
+    <%= f.text_field :check_command %>
+  </div>
+  <div class="field">
+    <%= f.label :check_period %><br>
+    <%= f.text_field :check_period %>
+  </div>
+  <div class="field">
+    <%= f.label :notification_interval %><br>
+    <%= f.number_field :notification_interval %>
+  </div>
+  <div class="field">
+    <%= f.label :notification_period %><br>
+    <%= f.text_field :notification_period %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

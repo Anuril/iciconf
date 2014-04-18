@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140418172540) do
+ActiveRecord::Schema.define(version: 20140418184715) do
+
+  create_table "hosts", force: true do |t|
+    t.string   "hostname"
+    t.string   "alias"
+    t.string   "display_name"
+    t.string   "address"
+    t.string   "parents"
+    t.string   "hostgroups"
+    t.string   "check_command"
+    t.string   "check_period"
+    t.integer  "notification_interval"
+    t.string   "notification_period"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "prename"

@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hostname:</strong>
+  <%= @host.hostname %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @host.alias %>
+</p>
+
+<p>
+  <strong>Display name:</strong>
+  <%= @host.display_name %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @host.address %>
+</p>
+
+<p>
+  <strong>Parents:</strong>
+  <%= @host.parents %>
+</p>
+
+<p>
+  <strong>Hostgroups:</strong>
+  <%= @host.hostgroups %>
+</p>
+
+<p>
+  <strong>Check command:</strong>
+  <%= @host.check_command %>
+</p>
+
+<p>
+  <strong>Check period:</strong>
+  <%= @host.check_period %>
+</p>
+
+<p>
+  <strong>Notification interval:</strong>
+  <%= @host.notification_interval %>
+</p>
+
+<p>
+  <strong>Notification period:</strong>
+  <%= @host.notification_period %>
+</p>
+
+<%= link_to 'Edit', edit_host_path(@host) %> |
+<%= link_to 'Back', hosts_path %>
