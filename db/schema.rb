@@ -24,8 +24,7 @@ ActiveRecord::Schema.define(version: 20140418184715) do
     t.string   "check_period"
     t.integer  "notification_interval"
     t.string   "notification_period"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.timestamps 
   end
 
   create_table "users", force: true do |t|
@@ -34,8 +33,7 @@ ActiveRecord::Schema.define(version: 20140418184715) do
     t.string   "email"
     t.string   "password"
     t.string   "salt"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.timestamps
   end
 
 end

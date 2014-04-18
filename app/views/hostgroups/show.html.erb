@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hostgroup name:</strong>
+  <%= @hostgroup.hostgroup_name %>
+</p>
+
+<p>
+  <strong>Alias:</strong>
+  <%= @hostgroup.alias %>
+</p>
+
+<p>
+  <strong>Members:</strong>
+  <%= @hostgroup.members %>
+</p>
+
+<p>
+  <strong>Hostgroup members:</strong>
+  <%= @hostgroup.hostgroup_members %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= @hostgroup.note %>
+</p>
+
+<%= link_to 'Edit', edit_hostgroup_path(@hostgroup) %> |
+<%= link_to 'Back', hostgroups_path %>

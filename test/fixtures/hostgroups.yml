@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hostgroup_name: MyString
+  alias: MyString
+  members: MyString
+  hostgroup_members: MyString
+  note: MyText
+
+two:
+  hostgroup_name: MyString
+  alias: MyString
+  members: MyString
+  hostgroup_members: MyString
+  note: MyText
